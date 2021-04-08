@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Topology Optimization through Neural Networks
 
 You can use the [editor on GitHub](https://github.com/znt5009/TopOppNN.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
