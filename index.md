@@ -1,6 +1,6 @@
 ---
 title: Topology Optimization through Neural Networks
-description: Aaron Slavin, Ibrahim Takroni, Zachary Timothy
+description: Aaron Slavin (<a href="ads5825@psu.edu">ads5825@psu.edu</a>), Ibrahim Takroni (<a href="ima5170@psu.edu">ima5170@psu.edu</a>), Zachary Timothy (<a href="znt5009@psu.edu">znt5009@psu.edu</a>)
 ---
 
 # Topology Optimization through Neural Networks
