@@ -1,4 +1,12 @@
-## Topology Optimization through Neural Networks
+---
+title: Topology Optimization through Neural Networks
+description: Aaron Slavin, Ibrahim Takroni, Zachary Timothy
+---
+
+# Topology Optimization through Neural Networks
+## _Aaron Slavin_
+## _Ibrahim Takroni_
+## _Zachary Timothy_
 
 You can use the [editor on GitHub](https://github.com/znt5009/TopOppNN.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
