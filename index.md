@@ -7,7 +7,7 @@ Topology optimization seeks to calculate the ideal structure to support a given 
 ## Topology Optimization
 
 ## Convolution Neural Networks
-
+typing for test
 ## Synthetic Data Generation
 
 ## Neural Network Architecture
