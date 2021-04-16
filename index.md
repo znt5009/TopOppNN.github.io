@@ -7,7 +7,8 @@ Topology optimization seeks to calculate the ideal structure to support a given 
 ## Topology Optimization
 
 ## Convolution Neural Networks
-typing for test
+A convolutional neural network (CNN) is a neural network that can handle image processing much better than traditional neural networks. In this project the use of CNN would better suited than the use of traditional neural networks. A CNN works by using filters on the image and calculates a value for those points in the image. This value is then run through the layers of the CNN to pull the more important infomation from the image, thus allowing for the key features of the image to be passed along. This allows for many applications and the most common application is image processing that could label certain pictures as certain items that the CNN has been train to recognized. For this project the CNN is being used to identify areas of importance in the topology optimization process in order to speed up the entire process. This is done by training the CNN on a part to recognize patterns of topology optimization to then allow the program to skip steps in tradtional topology optimization. This will then lead to faster speeds for topology optimization which is a key issue with the implementation of topology optimization within broad industry.
+
 ## Synthetic Data Generation
 
 ## Neural Network Architecture
