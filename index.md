@@ -12,7 +12,11 @@ A convolutional neural network (CNN) is a neural network that can handle image p
 
 ## Synthetic Data Generation
 The quality of a trained neural network is directly dependent on the quality of the data used to train and test the architecture. Large and complete datasets regarding topology optimization are a spectacle to come across, so the team decided to synthetically generate a dataset to be used to train the network. In order to build a more adaptable network, the dataset needed to be generated with a high degree of variability. To do this, the team used the free matlab program _top3d_ from Liu and Tovar (insert ref here). A key focus of this work was to feed more advanced models to the network through the use of specified holes within the elements internally and externally. This would create more unique starting geometry to represent more realistic loading conditions for parts in the real world. 
-![Internal Hole Example](OvalPassive.png) | ![External Hole Example](DistForce.png)
+DistForce             |  OvalPassive
+:-------------------------:|:-------------------------:
+<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/DistForce.png" width ="500">|<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/OvalPassive.png" width = "500"> 
+
+
 ## Neural Network Architecture
 
 ## Results
