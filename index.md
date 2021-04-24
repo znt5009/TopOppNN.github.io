@@ -19,10 +19,10 @@ layout: default
 			<tbody>
 				<tr>
 					<td>
-						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/initial_train.png" width ="500" img align="left"> </div>
+						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/initial_train.png" width ="500" img align="center"> </div>
 					</td>
 					<td>
-						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/final_train.png" width = "500"img align="right"> 
+						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/final_train.png" width = "500"img align="center"> 
 					</td>
 				</tr>
 			</tbody>
@@ -58,10 +58,10 @@ The quality of a trained neural network is directly dependent on the quality of 
 			<tbody>
 				<tr>
 					<td>
-						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/DistForce.png" width ="500" align="left"> </div>
+						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/DistForce.png" width ="500" align="center"> </div>
 					</td>
 					<td>
-						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/OvalPassive.png" width = "500" align="right"> 
+						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/OvalPassive.png" width = "500" align="center"> 
 					</td>
 				</tr>
 			</tbody>
