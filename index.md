@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/initial_train.png" width ="500">|<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/final_train.png" width = "500"> 
+
 # How can using three dimensional convolution neural networks help speed up topology optimization?
 Topology optimization seeks to calculate the ideal structure to support a given set of boundary and loading conditions within a given design domain. Following iterations of FEA and optimization, the results are presenting as element density probablilities. This iterative optimization process is computationally intensive, requiring large amounts of computing resources and time. The research team aims to try to speed up this portion of topology optmization by implementing a three dimensional convulation neural network to predict the final result after only a few optimization iterations. 
 
