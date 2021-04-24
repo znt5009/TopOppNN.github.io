@@ -22,7 +22,7 @@ layout: default
 						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/initial_train.png" width ="500" img align="center"> </div>
 					</td>
 					<td>
-						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/final_train.png" width = "500"img align="center"> 
+						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/final_train.png" width = "500" img align="center"> 
 					</td>
 				</tr>
 			</tbody>
