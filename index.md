@@ -51,7 +51,7 @@ The quality of a trained neural network is directly dependent on the quality of 
 			<thead>
 				<tr>
 					<th colspan="2">
-						<em> Description: </em>
+						<em> Unique Geometery Created in Matlab </em>
 					</th>
 				</tr>
 			</thead>
@@ -78,7 +78,6 @@ Our network consists of 3D convolutional layers with Rectified Linear Unit(ReLU)
 
 ## Results
 Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 95.1% and an RMS Acurracy of 80.2%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel. In the table below you can see the input data, the actual output, the predictied output, and the binary predictions.
-
 <html>
 	<body>
 		<table >
