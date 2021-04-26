@@ -77,7 +77,46 @@ After running each model, the nodal density probability and gradient data was co
 Our network consists of 3D convolutional layers with Rectified Linear Unit(ReLU) as the non-linear activiation function. We also use MaxPopoling to downsize the input data in order to encode the data into the network. Then Up Sampling was used to help decode the encoded the data along with concatenation layers to link certain weights from previous layers. Finally, we used the hyperbolic tangent as the activation function for the decoder, because this resulted in the highest accurary compared to the other activiation functions that were tested. When checking for loss in the model due to the nature of what we wanted to accomplish the binary cross entropy loss function was used. 
 
 ## Results
-Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 97.4% and an RMS Acurracy of 85%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel.
+Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 95.1% and an RMS Acurracy of 80.2%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel. In the table below you can see the input data, the actual output, the predictied output, and the binary predictions.
+
+<html>
+	<body>
+		<table >
+			<colgroup>
+				<col style="width: 300px" />
+				<col style="width: 160px" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th colspan="2">
+						<em> Actual Topology vs Model Topology </em>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/Input%20Data.PNG" width ="500" align="center"> </div>
+					</td>
+					<td>
+						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/True%20Output.PNG" width = "500" align="center"> 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/intital%20prediction%20non%20binary.PNG" width ="500" align="center"> </div>
+					</td>
+					<td>
+						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/Predicted%20Output.PNG" width = "500" align="center"> 
+					</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+
+
 
 ## Reference
 I. Sosnovik and I. Oseledets, “Neural networks for topology optimization,” Russian Journal of Numerical Analysis and Mathematical Modelling, vol. 34, no. 4, pp. 215–223, Aug. 2019, doi: 10.1515/rnam-2019-0018.
