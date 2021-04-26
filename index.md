@@ -74,44 +74,10 @@ Each model space contained 32 elements in the x direction, 12 elements in the y 
 
 After running each model, the nodal density probability and gradient data was compressed and saved for the first ten iterations as well as the final iteration. In addition to this, the nodal data for the loads and boundary conditions were also saved along the elemental data for their pbeing a whole, ie an element was passive. This set of data was then used in part or as a whole to train the developed neural networks.
 ## Neural Network Architecture
+Our network consists of 3D convolutional layers with Rectified Linear Unit(ReLU) as the non-linear activiation function. We also use MaxPopoling to downsize the input data in order to encode the data into the network. Then Up Sampling was used to help decode the encoded the data along with concatenation layers to link certain weights from previous layers. Finally, we used the hyperbolic tangent as the activation function for the decoder, because this resulted in the highest accurary compared to the other activiation functions that were tested. When checking for loss in the model due to the nature of what we wanted to accomplish the binary cross entropy loss function was used. 
 
 ## Results
+Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 97.4% and an RMS Acurracy of 85%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel.
 
 ## Reference
 I. Sosnovik and I. Oseledets, “Neural networks for topology optimization,” Russian Journal of Numerical Analysis and Mathematical Modelling, vol. 34, no. 4, pp. 215–223, Aug. 2019, doi: 10.1515/rnam-2019-0018.
-
-You can use the [editor on GitHub](https://github.com/znt5009/TopOppNN.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/znt5009/TopOppNN.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
