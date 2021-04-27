@@ -41,33 +41,7 @@ A convolutional neural network (CNN) is a neural network that can handle image p
 
 ## Synthetic Data Generation
 The quality of a trained neural network is directly dependent on the quality of the data used to train and test the architecture. Large and complete datasets regarding topology optimization are a spectacle to come across, so the team decided to synthetically generate a dataset to be used to train the network. In order to build a more adaptable network, the dataset needed to be generated with a high degree of variability. To do this, the team used the free matlab program _top3d_ from Liu and Tovar (Liu and Tovar, 2014). A key focus of this work was to feed more advanced models to the network through the use of specified holes within the elements internally and externally. This would create more unique starting geometry to represent more realistic loading conditions for parts in the real world. 
-<html>
-	<body>
-		<table >
-			<colgroup>
-				<col style="width: 300px" />
-				<col style="width: 160px" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th colspan="2">
-						<em> Unique Geometery Created in Matlab - Elements with density probability over .5 are displayed in green, specified holes are shown in translucent green, fixed nodes have a blue circle, and forces are represented as red x's </em>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/DistForce.png" width ="500" align="center"> </div>
-					</td>
-					<td>
-						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/OvalPassive.png" width = "500" align="center"> 
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</body>
-</html>
+<div><img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/mat.svg" width ="1000" align="center"></div>
  
 
 Each model space contained 32 elements in the x direction, 12 elements in the y direction, and 8 elements in the z direction totalling in 3,072 unit elements. Constant parameters used inlcude a penalty of 3, an rmin of 1.5, volfrac of 0.3, Young's modulus of 1, and Poisson's ratio of 0.3. This model was run 4,000 times with randomization of the inclusion of holes, boundary conditions, and loading. The models had a 3/14 chance to have an internal hole, that had equal probability to go through 1 of the primary axes, be oval or rectangular, have three potential sizes, and up to four possible orientations depending on the size. There is also a 3/14 chance that a model would have an eternal hole on a randomly chosen plane, with four possible locations for each plane, with a random length and depth up to half the number of elements in the given direction. For boudary conditions, there would be equal chance to have 3 to 4 pinned nodes or a cantalievered face. The pinned nodes could be all planar or random with a weighted preference towards the outer edge of the part for more realistic conditions. The forces on the part follow a similar random distribution as the boundary conditions with the point forces ranging in number from 3 to 6.
@@ -79,7 +53,7 @@ Our network consists of 3D convolutional layers with Rectified Linear Unit(ReLU)
 <div><img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/neuralnet.svg" width ="1000" align="center"></div>
 
 ## Results
-Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 95.1% and an RMS Acurracy of 80.2%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel. In the table below you can see the input data, the actual output, the predictied output, and the binary predictions.
+Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 95.1% and an RMS Acurracy of 80.2%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. In terms of reducing the time it takes for the optimization, the original code took 76.1 seconds to complete from the tenth iteration and only 0.33 seconds for the neural network. This is a hug saving in time from this CNN that could be used to save hours in the design process of parts that need to be optimizied for industries like space travel. In the table below you can see the input data, the actual output, the predictied output, and the binary predictions.
 <div><img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/predictionMatrix.svg" width ="1000" align="center"></div>
 
 
