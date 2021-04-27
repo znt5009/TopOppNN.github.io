@@ -51,7 +51,7 @@ The quality of a trained neural network is directly dependent on the quality of 
 			<thead>
 				<tr>
 					<th colspan="2">
-						<em> Unique Geometery Created in Matlab </em>
+						<em> Unique Geometery Created in Matlab - Elements with density probability over .5 are displayed in green, specified holes are shown in translucent green, fixed nodes have a blue circle, and forces are represented as red x's </em>
 					</th>
 				</tr>
 			</thead>
@@ -73,8 +73,10 @@ The quality of a trained neural network is directly dependent on the quality of 
 Each model space contained 32 elements in the x direction, 12 elements in the y direction, and 8 elements in the z direction totalling in 3,072 unit elements. Constant parameters used inlcude a penalty of 3, an rmin of 1.5, volfrac of 0.3, Young's modulus of 1, and Poisson's ratio of 0.3. This model was run 4,000 times with randomization of the inclusion of holes, boundary conditions, and loading. The models had a 3/14 chance to have an internal hole, that had equal probability to go through 1 of the primary axes, be oval or rectangular, have three potential sizes, and up to four possible orientations depending on the size. There is also a 3/14 chance that a model would have an eternal hole on a randomly chosen plane, with four possible locations for each plane, with a random length and depth up to half the number of elements in the given direction. For boudary conditions, there would be equal chance to have 3 to 4 pinned nodes or a cantalievered face. The pinned nodes could be all planar or random with a weighted preference towards the outer edge of the part for more realistic conditions. The forces on the part follow a similar random distribution as the boundary conditions with the point forces ranging in number from 3 to 6.
 
 After running each model, the nodal density probability and gradient data was compressed and saved for the first ten iterations as well as the final iteration. In addition to this, the nodal data for the loads and boundary conditions were also saved along the elemental data for their pbeing a whole, ie an element was passive. This set of data was then used in part or as a whole to train the developed neural networks.
+
 ## Neural Network Architecture
 Our network consists of 3D convolutional layers with Rectified Linear Unit(ReLU) as the non-linear activiation function. We also use MaxPopoling to downsize the input data in order to encode the data into the network. Then Up Sampling was used to help decode the encoded the data along with concatenation layers to link certain weights from previous layers. Finally, we used the hyperbolic tangent as the activation function for the decoder, because this resulted in the highest accurary compared to the other activiation functions that were tested. When checking for loss in the model due to the nature of what we wanted to accomplish the binary cross entropy loss function was used. 
+<div><img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/neuralnet.svg" width ="1000" align="center"></div>
 
 ## Results
 Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 95.1% and an RMS Acurracy of 80.2%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel. In the table below you can see the input data, the actual output, the predictied output, and the binary predictions.
