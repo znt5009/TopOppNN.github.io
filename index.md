@@ -80,42 +80,7 @@ Our network consists of 3D convolutional layers with Rectified Linear Unit(ReLU)
 
 ## Results
 Overall the project was fairly successful in using CNN as part of the topology optimization process. In this project, the team was able to get a binary acurracy of 95.1% and an RMS Acurracy of 80.2%. This means that through the use of this CNN a prediction of what the model will look like after topology optimizatioin is determined with a fairly high accuracy to what the actual model will look like. This process still takes a lot of time and computional resources, but with better technology this CNN could be used to save hours in the design process of parts that need to be optimizied for industries like space travel. In the table below you can see the input data, the actual output, the predictied output, and the binary predictions.
-<html>
-	<body>
-		<table >
-			<colgroup>
-				<col style="width: 300px" />
-				<col style="width: 160px" />
-			</colgroup>
-			<thead>
-				<tr>
-					<th colspan="2">
-						<em> Actual Topology vs Model Topology </em>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/Input%20Data.PNG" width ="500" align="center"> </div>
-					</td>
-					<td>
-						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/True%20Output.PNG" width = "500" align="center"> 
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div> <img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/intital%20prediction%20non%20binary.PNG" width ="500" align="center"> </div>
-					</td>
-					<td>
-						<img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/Predicted%20Output.PNG" width = "500" align="center"> 
-					</td>
-					
-				</tr>
-			</tbody>
-		</table>
-	</body>
-</html>
+<div><img src = "https://raw.githubusercontent.com/znt5009/TopOppNN.github.io/gh-pages/predictionMatrix.svg" width ="1000" align="center"></div>
 
 
 
