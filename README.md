@@ -1,2 +1,2 @@
-# TopOppNN
-Add describtion of the project plus link to the site as well
+# Topology Optimization through Neural Networks
+Topology optimization is the process of redesigning parts to be their optimial size to handle the given constraints. However, this process takes a lot of time and computional power. Therefore, this project aims at taking a look at previous work and implementing convolutional neural networks to speed the topology optimization process for complex geometries. The results of this project were good with the binary prediction of the model being 95% accurate. However, this process still takes a significant amount of time and future work could make the process even faster. To get more on this project check out our [site](https://znt5009.github.io/TopOppNN.github.io/)
